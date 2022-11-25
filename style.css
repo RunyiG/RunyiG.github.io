@@ -24,7 +24,8 @@ body {
 }
 
 .Bio_header3 {
-    color: darkslategrey;
+    color: aliceblue;
+    font-weight: bold;
     font-family: 'DejaVu Math TeX Gyre';
 }
 
@@ -38,5 +39,17 @@ body {
 
 .Bio_paragraph {
     text-align: center;
+    font-family: 'Constantia';
+}
+
+.Bio_botton {
+    background-color: #2f3240;
+    border: none;
+    color: white;
+    padding: 10px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     font-family: 'Constantia';
 }

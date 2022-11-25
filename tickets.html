@@ -5,38 +5,45 @@
 	</head>
 	<body>
 		<h1>Come Buy Your Ticket Now!</h1>
+		<h3>The art show will run from December 2nd through December 11th. </h3> 
 		<p>Book your ticket in advance, simply enter your email address to get the e-ticket.</p>
+		<p>Please note, there is a limit of 10 tickets per party.</p> 
 		<p>Number of ticket(s):</p>
-		<input type="number" id="numberTicket">
+		<input type="number" min="0" max="10" id="numberTicket">
 		<p>Enter Email to receive your e-ticket:</p>
 		<input type="email" id="emailAddress">
-		<button onclick="checkEmail(email)">Check Email</button>
 		<p>Date of visit:</p>
-		<input type="date" id="dateVisit">
-		<button onclick="confirm()">Confirm</button>
+		<input type="date" min="2022-12-02" max="2022-12-11" id="dateVisit">
+		<button onclick="checkEmail(), confirm()">Confirm</button> <!-- first check the email is valid, then confirm the tickets -->
 			<script>
-				function checkEmail(email) {
-					var mailFormat=/^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+				var validEmail = false;
+
+				function checkEmail() {
+					var mailFormat=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; //to use RegEx to confirm that the email is valid
 					var getEmail=document.querySelector("#emailAddress").value;
 						if (getEmail.match(mailFormat)) {
-							alert("Valid Email Address!");
+							validEmail = true;
 						}
 						else {
-							alert("Invalid Email Address!");
+							validEmail = false;
 						}
 				}
+
 				function confirm() {
 					var getNumber=document.querySelector("#numberTicket").value;
-						if (getNumber==1) {
-							alert("One ticket has been sent to your email!");
+					if (getNumber<1) { //check that they've entered numbers first
+						alert("Please select your number of tickets!");
+					}else{
+						if(validEmail){ //check that the email is valid
+							if (getNumber==1) {
+								alert("One ticket has been sent to your email!");
+							}else {
+								alert(getNumber+" tickets have been sent to your email!");
+							}
+						}else{
+							alert("Email invalid, please re-enter.");
 						}
-						else if (getNumber<1) {
-							alert("Please enter a number!");
-						}
-						else {
-							alert(getNumber+" tickers have been sent to your email!");
-						}
-
+					}
 				}
 			</script>
 	</body>

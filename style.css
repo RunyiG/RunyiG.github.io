@@ -1,0 +1,42 @@
+body {
+    background-image: url("0_marquee_2320.jpg");
+    background-repeat: repeat-y;
+    background-size: 125% auto;
+    background-color: antiquewhite;
+    background-attachment: fixed;
+}
+
+#Bio_Main {
+    color: beige;
+    background: black;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    text-align: center;
+    font-family: 'HoloLens MDL2 Assets';
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#Bio_header1 {
+    text-align: center;
+    font-family: 'HoloLens MDL2 Assets';
+}
+
+.Bio_header3 {
+    color: darkslategrey;
+    font-family: 'DejaVu Math TeX Gyre';
+}
+
+.Bio_ImageDegas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: auto;
+}
+
+.Bio_paragraph {
+    text-align: center;
+    font-family: 'Constantia';
+}

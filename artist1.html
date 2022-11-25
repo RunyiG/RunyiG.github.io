@@ -51,9 +51,11 @@
             the Degas family spelled their name "de Gas"; the preposition "de" suggesting a land-owning aristocratic
             background which they did not actually have.
         </p>
-        <button type="button" class="Bio_botton" >See more</button>
-        <div>
-            <p class="earlyLife">
+
+        <input type="button" class="Bio_botton" value="Hide" id="EarlyLife_bt">
+
+        <div id="earlyLife">
+            <p>
                 Degas came from a very musical household – his mother was an amateur opera singer and his father occasionally
                 arranged for musicians to give recitals in their home. Degas attended the Lycée Louis-le-Grand, a prestigious and
                 rigorous boys' secondary school, where he received a classical education.<br />
@@ -88,9 +90,11 @@
             Degas grew to share Manet's disdain for the presiding art establishment as well as his belief that artists needed
             to turn to more modern techniques and subject matter.
         </p>
-        <button type="button" class="Bio_botton">See more</button>
-        <div>
-            <p id="earlyWorks">
+
+        <input type="button" class="Bio_botton" value="Hide" id="EarlyWorks_bt">
+
+        <div id="earlyWorks">
+            <p>
                 By 1868, Degas had become a prominent member of a group of avant-garde artists including Manet,
                 Pierre-Auguste Renoir, Claude Monet and Alfred Sisley, who gathered frequently at the Café Guerbois to
                 discuss ways in which artists could engage the modern world. Their meetings coincided with tumultuous
@@ -116,29 +120,32 @@
             exhibited were modern portraits of modern women — milliners, laundresses and ballet dancers — painted from radical
             perspectives.
         </p>
-        <button type="button" class="Bio_botton">See more</button>
-        <p id="Impressionists">
-            Over the course of the next 12 years, the group staged eight such Impressionist exhibitions, and Degas exhibited at all
-            of them. His most famous paintings during these years were "The Dancing Class" (1871), "The Dance Class" (1874),
-            "Woman Ironing" (1873) and "Dancers Practicing at the Bar" (1877). In 1880, he also sculpted "The Little
-            Fourteen-Year-Old Dancer," a sculpture so hauntingly evocative that while some critics called it brilliant,
-            others condemned him as cruel for having made it. While Degas's paintings are not overtly political,
-            they do reflect France's changing social and economic environment. His paintings portray the growth of the bourgeoisie,
-            the emergence of a service economy and the widespread entrance of women into the workplace.<br />
 
-            In 1886, at the eighth and final Impressionist exhibition in Paris, Degas exhibited 10 paintings of nude women in
-            various stages of bathing. These nude paintings were the talk of the exhibition and also the source of controversy;
-            some called the women "ugly" while others praised the honesty of his depictions. Degas went on to paint hundreds of
-            studies of nude women. He also continued to paint dancers, contrasting the awkward humility of the dancer backstage
-            with her majestic grace in the midst of performance.<br />
+        <input type="button" class="Bio_botton" value="Hide" id="Impressionists_bt">
+        <div id="Impressionists">
+            <p >
+                Over the course of the next 12 years, the group staged eight such Impressionist exhibitions, and Degas exhibited at all
+                of them. His most famous paintings during these years were "The Dancing Class" (1871), "The Dance Class" (1874),
+                "Woman Ironing" (1873) and "Dancers Practicing at the Bar" (1877). In 1880, he also sculpted "The Little
+                Fourteen-Year-Old Dancer," a sculpture so hauntingly evocative that while some critics called it brilliant,
+                others condemned him as cruel for having made it. While Degas's paintings are not overtly political,
+                they do reflect France's changing social and economic environment. His paintings portray the growth of the bourgeoisie,
+                the emergence of a service economy and the widespread entrance of women into the workplace.<br />
 
-            In the mid-1890s, an episode known as the "Dreyfus Affair" sharply divided French society. In 1894, Alfred Dreyfus,
-            a young Jewish captain in the French military, was convicted of treason on spying charges. Although evidence that
-            proved Dreyfus's innocence surfaced in 1896, rampant anti-Semitism kept him from being exonerated for another 10 years.
-            With the country deeply divided between those in support of Dreyfus and those against him, Degas sided with those whose
-            anti-Semitism blinded them to Dreyfus's innocence. His stance against Dreyfus cost him many friends and much respect
-            within the typically more tolerant avant-garde art circles.<br />
-        </p>
+                In 1886, at the eighth and final Impressionist exhibition in Paris, Degas exhibited 10 paintings of nude women in
+                various stages of bathing. These nude paintings were the talk of the exhibition and also the source of controversy;
+                some called the women "ugly" while others praised the honesty of his depictions. Degas went on to paint hundreds of
+                studies of nude women. He also continued to paint dancers, contrasting the awkward humility of the dancer backstage
+                with her majestic grace in the midst of performance.<br />
+
+                In the mid-1890s, an episode known as the "Dreyfus Affair" sharply divided French society. In 1894, Alfred Dreyfus,
+                a young Jewish captain in the French military, was convicted of treason on spying charges. Although evidence that
+                proved Dreyfus's innocence surfaced in 1896, rampant anti-Semitism kept him from being exonerated for another 10 years.
+                With the country deeply divided between those in support of Dreyfus and those against him, Degas sided with those whose
+                anti-Semitism blinded them to Dreyfus's innocence. His stance against Dreyfus cost him many friends and much respect
+                within the typically more tolerant avant-garde art circles.<br />
+            </p>
+        </div>
     </div>
 
 
@@ -155,5 +162,56 @@
         </h3>
         <a href="https://www.edgar-degas.org/biography.html">edgar-degas.org</a>
 
+        <script>
+
+            var btn_1 = document.getElementById("EarlyLife_bt");
+            var content1 = document.getElementById("earlyLife");
+
+            btn_1.onclick = function()
+            {
+
+                if (btn_1.value == "Hide")
+                {
+                    content1.className = "hide";
+                    btn_1.value = "See More";
+                }
+                else 
+                {
+                    content1.className = "show";
+                    btn_1.value = "Hide";
+                }
+            };
+
+            var btn_2 = document.getElementById("EarlyWorks_bt");
+            var content2 = document.getElementById("earlyWorks");
+
+            btn_2.onclick = function ()
+            {
+                if (btn_2.value == "Hide") {
+                    content2.className = "hide";
+                    btn_2.value = "See More";
+                }
+                else {
+                    content2.className = "show";
+                    btn_2.value = "Hide";
+                }
+            };
+
+            var btn_3 = document.getElementById("Impressionists_bt");
+            var content3 = document.getElementById("Impressionists");
+
+            btn_3.onclick = function ()
+            {
+                if (btn_3.value == "Hide") {
+                    content3.className = "hide";
+                    btn_3.value = "See More";
+                }
+                else {
+                    content3.className = "show";
+                    btn_3.value = "Hide";
+                }
+            };
+
+        </script>
 </body>
 </html>

@@ -53,3 +53,13 @@ body {
     font-size: 16px;
     font-family: 'Constantia';
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+    /*Displays an element as a block element (like <p>). 
+        It starts on a new line, and takes up the whole width*/
+}

@@ -1,9 +1,9 @@
 body {
-    background-image: url("images/0_marquee_2320.jpg");
+    /* background-image: url("images/0_marquee_2320.jpg");
     background-repeat: repeat-y;
-    background-size: 125% auto;
+    background-size: 125% auto; */
     background-color: antiquewhite;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 #Bio_Main {
@@ -63,3 +63,4 @@ body {
     /*Displays an element as a block element (like <p>). 
         It starts on a new line, and takes up the whole width*/
 }
+

@@ -41,6 +41,7 @@ a:hover{
     justify-content: space-between;
     padding: 1.5vh 10vw 1.5vh 10vw;
     background-image: url("images/0_marquee_2321.jpg");
+    background-size: 100%;
 }
 
 .nav{

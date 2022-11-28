@@ -2,30 +2,37 @@
 <html>
 	<head>
 		<title>Edgar Degas - Buy Tickets</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="styleind.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<nav>
             <div class="header"> 
                 <h1>Edgar Degas</h1>
                 <div class="nav">
+                	<a href="artist1.html"><p class="navItem"> Home </p></a>
                     <a href="gallery.html"><p class="navItem"> Gallery </p></a>
                     <a href="tickets.html"><p class="navItem"> Buy Tickets </p></a>
                 </div>
             </div>
         </nav>
 
-		<h1>Come Buy Your Ticket Now!</h1>
-		<h3>The art show will run from December 2nd through December 11th. </h3> 
-		<p>Book your ticket in advance, simply enter your email address to get the e-ticket.</p>
-		<p>Please note, there is a limit of 10 tickets per party.</p> 
-		<p>Number of ticket(s):</p>
-		<input type="number" min="0" max="10" id="numberTicket">
-		<p>Enter Email to receive your e-ticket:</p>
-		<input type="email" id="emailAddress">
-		<p>Date of visit:</p>
-		<input type="date" min="2022-12-02" max="2022-12-11" id="dateVisit">
-		<button onclick="checkEmail(), confirm()">Confirm</button> <!-- first check the email is valid, then confirm the tickets -->
+        <div id="ticket">
+			<h1>Come Buy Your Ticket Now!</h1>
+			<h3>The art show will run from December 2nd through December 11th. </h3> 
+			<p>Book your ticket in advance, simply enter your email address to get the e-ticket.</p>
+			<p>Please note, there is a limit of 10 tickets per party.</p> 
+			<p>Number of ticket(s):</p>
+			<input type="number" min="0" max="10" id="numberTicket">
+			<p>Enter Email to receive your e-ticket:</p>
+			<input type="email" id="emailAddress">
+			<p>Date of visit:</p>
+			<input type="date" min="2022-12-02" max="2022-12-11" id="dateVisit">
+			<button onclick="checkEmail(), confirm()">Confirm</button> <!-- first check the email is valid, then confirm the tickets -->
+		</div>
 			<script>
 				var validEmail = false;
 

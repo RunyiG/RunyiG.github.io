@@ -24,7 +24,7 @@ body {
 }
 
 .Bio_header3 {
-    color: aliceblue;
+    color: darkcyan;
     font-weight: bold;
     font-family: 'DejaVu Math TeX Gyre';
 }
@@ -62,5 +62,13 @@ body {
     display: block;
     /*Displays an element as a block element (like <p>). 
         It starts on a new line, and takes up the whole width*/
+}
+#ticket {
+    text-align: center;
+    background: rgba(165, 181, 165, 0.5);
+    max-width: 50%;
+    margin: 2rem auto 0 auto;
+    padding: 1px;
+    border: 1px solid darkcyan;
 }
 

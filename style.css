@@ -6,23 +6,6 @@ body {
     /* background-attachment: fixed; */
 }
 
-#Bio_Main {
-    color: beige;
-    background: black;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    word-spacing: 10px;
-    text-align: center;
-    font-family: 'HoloLens MDL2 Assets';
-    font-size: 50px;
-    font-weight: bold;
-}
-
-#Bio_header1 {
-    text-align: center;
-    font-family: 'HoloLens MDL2 Assets';
-}
-
 .Bio_header3 {
     color: darkcyan;
     font-weight: bold;
@@ -39,6 +22,11 @@ body {
 
 .Bio_paragraph {
     text-align: center;
+    font-weight: bold;
+    font-family: 'Constantia';
+}
+
+.paragraph {
     font-family: 'Constantia';
 }
 
@@ -63,6 +51,7 @@ body {
     /*Displays an element as a block element (like <p>). 
         It starts on a new line, and takes up the whole width*/
 }
+
 #ticket {
     text-align: center;
     background: rgba(165, 181, 165, 0.5);

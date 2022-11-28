@@ -1,0 +1,63 @@
+body {
+    /* background-image: url("images/0_marquee_2320.jpg");
+    background-repeat: repeat-y;
+    background-size: 125% auto; */
+    background-color: antiquewhite;
+    /* background-attachment: fixed; */
+}
+
+.Bio_header3 {
+    color: darkcyan;
+    font-weight: bold;
+    font-family: 'DejaVu Math TeX Gyre';
+}
+
+.Bio_ImageDegas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: auto;
+}
+
+.Bio_paragraph {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Constantia';
+}
+
+.paragraph {
+    font-family: 'Constantia';
+}
+
+.Bio_botton {
+    background-color: #2f3240;
+    border: none;
+    color: white;
+    padding: 10px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Constantia';
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+    /*Displays an element as a block element (like <p>). 
+        It starts on a new line, and takes up the whole width*/
+}
+
+#ticket {
+    text-align: center;
+    background: rgba(165, 181, 165, 0.5);
+    max-width: 50%;
+    margin: 2rem auto 0 auto;
+    padding: 1px;
+    border: 1px solid darkcyan;
+}
+

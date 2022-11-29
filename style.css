@@ -84,7 +84,7 @@ a:hover{
 }
 
 /* CSS FOR GALLERY */
-.slideshow-container {
+.slideshow_container {
     position: relative;
     margin: 0vh 10vw 3vh;
   
@@ -109,7 +109,7 @@ a:hover{
     background-color: rgba(34, 34, 34, 0.8);
   }
   
-  .slideshow-container:hover #galleryOver{
+  .slideshow_container:hover #galleryOver{
     opacity: 1;
   }
   

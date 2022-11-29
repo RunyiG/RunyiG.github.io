@@ -1,164 +1,167 @@
 body{
-    margin: 0vw;
-    background-color: #faf5eb;
-    font-family: 'Constantia', sans-serif;
-    font-size: 18px;
+  margin: 0vw;
+  background-color: #faf5eb;
+  font-family: 'Constantia', sans-serif;
+  font-size: 18px;
 }
 
 h1{
-    font-size: 3em;
-    font-family: 'Satisfy', cursive;
+  font-size: 3em;
+  font-family: 'Satisfy', cursive;
 }
 
 h3{
-    color: darkcyan;
-    font-weight: bold;
-    font-size: 1.3em;
-    font-family: 'DejaVu Math TeX Gyre';
+  color: darkcyan;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-family: 'DejaVu Math TeX Gyre';
 }
 
 a{
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .button{
-    background-color: #2f3240;
-    border: none;
-    color: white;
-    padding: 10px 17px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  background-color: #2f3240;
+  border: none;
+  color: white;
+  padding: 10px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button:hover{
+  cursor: pointer;
 }
 
 /* CSS FOR HEADER */
 .header{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding: 0vh 10vw 0vh 10vw;
-    background-color: #faf5eb;
-    background-size: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0vh 10vw 0vh 10vw;
+  background-color: #faf5eb;
+  background-size: 100%;
 }
 
 .nav{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    padding-right: 1em;
-    align-self: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  padding-right: 1em;
+  align-self: center;
 }
 
 .navItem{
-    padding-left: 1em;
-    font-size: 1.5em;
+  padding-left: 1em;
+  font-size: 1.5em;
 }
 
 /* CSS FOR INDEX */
 
 .imageContainer{
-    position: relative;
-    width: 90vw;
+  position: relative;
+  width: 90vw;
 }
 
 .indImages{
-    width: 50vw; 
-    height:500px; 
-    object-fit: cover;
+  width: 50vw; 
+  height:500px; 
+  object-fit: cover;
 }
 
 #imageText{
-    position: absolute; 
-    padding: 4vh 2vw;
-    top: 20%; 
-    right: -50px;
-    font-size: 1.5em;
-    color: black;
-    background-color: #faf5eb;
+  position: absolute; 
+  padding: 4vh 2vw;
+  top: 20%; 
+  right: -50px;
+  font-size: 1.5em;
+  color: black;
+  background-color: #faf5eb;
 }
 
 /* CSS FOR GALLERY */
 .slideshow_container {
-    position: relative;
-    margin: 0vh 10vw 3vh;
+  position: relative;
+  margin: 0vh 10vw 3vh;
+}
   
-  }
-  
-  .mySlides {
-    display: none;
-  }
-  
-  #galleryOver{
-    opacity: 0;
-    position: absolute;
-    top: 40%;
-    bottom: 42%;
-    height: fit-content;
-    left: 30%;
-    right: 30%;
-    text-align: center;
-    color: white;
-    transition: all 0.5s ease 0s;
-    font-size: 1.5em;
-    padding: 3vh 2vw;
-    background-color: rgba(34, 34, 34, 0.8);
-  }
-  
-  .slideshow_container:hover #galleryOver{
-    opacity: 1;
-  }
-  
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    background-color:rgba(43, 43, 43, 0.8);
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  .dots{
-    text-align:center; 
-    margin-top: 1vh; 
-    margin-bottom: 1vh; 
-    position: absolute; 
-    bottom:0; 
-    left: 20%; 
-    right: 20%;
-  }
-  
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: rgb(194, 194, 194);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
+.mySlides {
+  display: none;
+}
+
+#galleryOver{
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  bottom: 42%;
+  height: fit-content;
+  left: 30%;
+  right: 30%;
+  text-align: center;
+  color: white;
+  transition: all 0.5s ease 0s;
+  font-size: 1.5em;
+  padding: 3vh 2vw;
+  background-color: rgba(34, 34, 34, 0.8);
+}
+
+.slideshow_container:hover #galleryOver{
+  opacity: 1;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  background-color:rgba(43, 43, 43, 0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dots{
+  text-align:center; 
+  margin-top: 1vh; 
+  margin-bottom: 1vh; 
+  position: absolute; 
+  bottom:0; 
+  left: 20%; 
+  right: 20%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(194, 194, 194);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
 
 /* CSS FOR TICKET PAGE */
 .ticket_container{
@@ -169,16 +172,17 @@ a:hover{
 }
 
 .tickets{
-    /* background-color: rgb(134, 134, 165);  */
-    width: fit-content; 
-    text-align: center;
-    color: white;  
-    background-color: rgba(23, 23, 23, 0.5);
-    padding: 1vh 3vw 2vh;
+  /* background-color: rgb(134, 134, 165);  */
+  width: fit-content; 
+  text-align: center;
+  color: white;  
+  background-color: rgba(23, 23, 23, 0.5);
+  padding: 1vh 3vw 2vh;
 }
 
 .ticket_info{
   margin-top: 4vh;
+  margin-bottom: 4vh;
   color: white;  
   background-color: rgb(23, 23, 23);
   padding: 1vh 3vw 2vh;

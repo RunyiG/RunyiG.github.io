@@ -99,6 +99,7 @@ a:hover{
     position: absolute;
     top: 40%;
     bottom: 42%;
+    height: fit-content;
     left: 30%;
     right: 30%;
     text-align: center;

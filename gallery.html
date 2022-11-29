@@ -2,85 +2,82 @@
 <html>
     <head>
         <title> Edgar Degas - Gallery </title>
-        <link rel="stylesheet" type="text/css" href="style.css">s
+        <link rel="stylesheet" type="text/css" href="style.css">
 	   <!-- <link rel="stylesheet" href="gallery.css"> -->
         <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <nav>
-            <div class="header"> 
-                <a href="index.html"><h1>Edgar Degas</h1></a>
-                <div class="nav">
-                    <a href="gallery.html" style="text-decoration: underline"><p class="navItem"> Gallery </p></a>
-                    <a href="tickets.html"><p class="navItem"> Buy Tickets </p></a>
-                </div>
-            </div>
-            <hr style="width: 50vw; text-align: center; border-width: 0.2px">
-        </nav>
+      <nav>
+          <div class="header"> 
+              <a href="index.html"><h1>Edgar Degas</h1></a>
+              <div class="nav">
+                  <a href="gallery.html" style="text-decoration: underline"><p class="navItem"> Gallery </p></a>
+                  <a href="tickets.html"><p class="navItem"> Buy Tickets </p></a>
+              </div>
+          </div>
+          <hr style="width: 50vw; text-align: center; border-width: 0.2px">
+      </nav>
 
-  <h2 style="text-align: center;"> Check out the artwork that will be available for auction this weekend!</h2>
+      <h2 style="text-align: center;"> Check out the artwork that will be available for auction this weekend!</h2>
+      <div class="slideshow_container">
+        <img class="mySlides" src="images/Degas3.jpg" alt="Degas3" style="width: 100%">
+        <img class="mySlides" src="images/Degas1.jpg" alt="Degas1" style="width: 100%">
+        <img class="mySlides" src="images/Degas2.jfif" alt="Degas2" style="width: 100%">
+        <img class="mySlides" src="images/Degas4.jpg" alt="Degas4" style="width: 100%">
+        <img class="mySlides" src="images/Degas5.jpg" alt="Degas5" style="width: 100%">
+        <img class="mySlides" src="images/Degas6.jpg" alt="Degas6" style="width: 100%">
+        <img class="mySlides" src="images/Degas7.jpg" alt="Degas7" style="width: 100%">
+        <img class="mySlides" src="images/Degas8.jpg" alt="Degas8" style="width: 100%">
+        <img class="mySlides" src="images/Degas9.jpg" alt="Degas9" style="width: 100%">
+        <img class="mySlides" src="images/Degas10.jpg" alt="Degas10" style="width: 100%">
 
-<br>
-<div class="slideshow-container">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    <img class="mySlides" src="images/Degas3.jpg" alt="Degas3" style="width: 100%">
-    <img class="mySlides" src="images/Degas1.jpg" alt="Degas1" style="width: 100%">
-    <img class="mySlides" src="images/Degas2.jfif" alt="Degas2" style="width: 100%">
-    <img class="mySlides" src="images/Degas4.jpg" alt="Degas4" style="width: 100%">
-    <img class="mySlides" src="images/Degas5.jpg" alt="Degas5" style="width: 100%">
-    <img class="mySlides" src="images/Degas6.jpg" alt="Degas6" style="width: 100%">
-    <img class="mySlides" src="images/Degas7.jpg" alt="Degas7" style="width: 100%">
-    <img class="mySlides" src="images/Degas8.jpg" alt="Degas8" style="width: 100%">
-    <img class="mySlides" src="images/Degas9.jpg" alt="Degas9" style="width: 100%">
-    <img class="mySlides" src="images/Degas10.jpg" alt="Degas10" style="width: 100%">
-
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  <p id="galleryOver"> This is the name of the thing </p>
-  <div class="dots">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-    <span class="dot" onclick="currentSlide(6)"></span>
-    <span class="dot" onclick="currentSlide(7)"></span>
-    <span class="dot" onclick="currentSlide(8)"></span>
-    <span class="dot" onclick="currentSlide(9)"></span>
-    <span class="dot" onclick="currentSlide(10)"></span>
-  </div>
-</div>
+        <p id="galleryOver"> This is the name of the thing </p>
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+          <span class="dot" onclick="currentSlide(10)"></span>
+        </div>
+      </div>
 
 
-</body>
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
+      </body>
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n == slides.length) {slideIndex = 0}
-        if (n < 0) {slideIndex = slides.length-1}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
         }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
         }
-        slides[slideIndex].style.display = "block";
-        dots[slideIndex].className += " active";
-        document.getElementById("galleryOver").innerHTML = slides[slideIndex].getAttribute("alt");
-      }
-    </script>
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n == slides.length) {slideIndex = 0}
+            if (n < 0) {slideIndex = slides.length-1}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex].style.display = "block";
+            dots[slideIndex].className += " active";
+            document.getElementById("galleryOver").innerHTML = slides[slideIndex].getAttribute("alt");
+        }
+      </script>
 </html>
